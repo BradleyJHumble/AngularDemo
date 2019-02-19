@@ -1,11 +1,23 @@
-.grey {
-  color: grey;
-}
+ul {
+    list-style-type: none;
+    margin: 0;padding: 0;
 
-.black {
-  color: black;
-}
+    li {
+        background: rgb(238, 238, 238);
+        padding: 2em;
+        border-radius: 4px;
+        margin-bottom: 7px;
+        display: grid;
+        grid-template-columns: 60px auto;
 
-.large {
-  font-size: 4em;
+        p {
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 100%;
+        }
+    }
 }

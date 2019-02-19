@@ -1,6 +1,8 @@
-<h1 [ngStyle]="{
-  'color': h1Style ? 'grey' : 'black',
-  'font-size': !h1Style ? '1em' : '4em'
+<h1> Home </h1>
 
-}">Home </h1>
-<button >Click Me!</button>
+<ul *ngIf='users'>
+  <li *ngFor='let user of users.data'>
+    <img [src]='user.avatar' />
+    <p> {{user.first_name}} {{user.last_name}}</p>
+  </li>
+</ul>
