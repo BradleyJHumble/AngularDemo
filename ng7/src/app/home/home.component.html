@@ -1,2 +1,6 @@
-<h1 [style.color]="h1Style ? 'grey' : 'black'">Home </h1>
+<h1 [ngStyle]="{
+  'color': h1Style ? 'grey' : 'black',
+  'font-size': !h1Style ? '1em' : '4em'
+
+}">Home </h1>
 <button (click)="firstClick()">Click Me!</button>
